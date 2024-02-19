@@ -38,7 +38,7 @@ export async function getStaticProps({ params }: ParamProps){
         "fields.slug": params.slug
     })
 
-    if(items.length) {
+    if(!items.length) {
         return {
             redirect: {
                 destination: "/",
