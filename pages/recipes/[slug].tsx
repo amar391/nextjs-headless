@@ -39,9 +39,9 @@ export async function getStaticProps({ params }: ParamProps){
 
     return {
         props: {
-            recipe: items[0],
-            revalidate: 1
-        }
+            recipe: items[0]
+        },
+        revalidate: 1
     }
 }
 
